@@ -28,13 +28,14 @@ def scrape_wikipedia_table(url):
 
     # Process each table found on the page
     for table_index, table in enumerate(tables):
-        print(f"\nTable {table_index + 1}:")
-
         # Extract headers (th) for the current table
         headers = [th.get_text(strip=True) for th in table.find_all('th')]
 
-        # Display the headers
-        print("Headers:", headers)
+        # Display the header
+        print(f"\nScraping Table {table_index + 1}:")
+        print("This table contains the following columns:\n")
+        print(", ".join(headers))
+        print("\nExtracting the data rows...\n")
 
         # Initialize a list to store the row data
         all_rows_data = []
@@ -52,7 +53,7 @@ def scrape_wikipedia_table(url):
         
         # Output the data in a readable format
         if all_rows_data:
-            print(f"Extracted {len(all_rows_data)} rows of data:\n")
+            print(f"Successfully extracted {len(all_rows_data)} data rows.\n")
             for row in all_rows_data:
                 print(row)
         else:
