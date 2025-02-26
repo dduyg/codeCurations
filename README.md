@@ -16,7 +16,7 @@ _A collection of useful scripts designed to simplify everyday tasks, automate re
 | [`playlist_extractor.py`](scripts/PlaylistExtractor) | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
 
 ### 🔹 Security & Productivity
-| Password Generator – Generates strong, random passwords with customizable options *(e.g. customizable length and complexity).* | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
+| [`random_passGen.py`](scripts/RandomPassGen) | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
 |---|---|---|---|
 | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
 
