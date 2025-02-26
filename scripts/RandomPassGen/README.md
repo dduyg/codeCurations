@@ -1,26 +1,20 @@
-# README
-
-*A simple and customizable Python script to generate strong, random passwords. This script allows you to specify the length and complexity of the password, including options for uppercase letters, digits, and special characters:*
-
+## `random_passGen.py`
+_A simple and customizable Python script to generate strong, random passwords. This script allows you to specify the length and complexity of the password, including options for uppercase letters, digits, and special characters:_
 - **Customizable Length**: Choose the desired length of the password (default is 12 characters).
 - **Character inclusion**: Uppercase, digits, and special characters (like `!`, `@`, `#`, etc.) can be toggled *on* or *off*.
 - **Randomization**: Passwords are generated with secure randomness.
 
 ## How to Use
-
 1. Run the script with the following command:
-
 ```bash
-python password_generator.py
+python random_passGen.py
 ```
-
-1. The script will prompt you to:
+2. The script will prompt you to:
     - Enter the desired password length (default is 12).
     - Choose whether to include uppercase letters, digits, and special characters by responding with 'y' (yes) or 'n' (no).
-2. After entering the options, the script will display a randomly generated password based on the provided criteria.
+3. After entering the options, the script will display a randomly generated password based on the provided criteria.
 
 ### Example Output:
-
 ```
 Password Generator
 -------------------
@@ -33,7 +27,6 @@ Generated Password: sJ3!kL8@M1wzG7hB
 ```
 
 ### Default Settings:
-
 - **Length**: 12 characters
 - **Uppercase Letters**: Included by default
 - **Digits**: Included by default
@@ -42,7 +35,6 @@ Generated Password: sJ3!kL8@M1wzG7hB
 You can modify these options to suit your needs.
 
 ## Code Explanation
-
 1. **Imports**:
     - `random`: For selecting characters randomly.
     - `string`: Defines different sets of characters like lowercase letters, uppercase letters, digits, and special characters.
@@ -55,7 +47,6 @@ You can modify these options to suit your needs.
     - The generated password is printed in the console.
 
 ## Security Note
-
 Always ensure that the password generated is long enough (8 characters or more is recommended).
 
 It prints a warning if the length is set to below 8 characters (suggesting stronger passwords be at least 8 characters long). Strong passwords are crucial for security.
