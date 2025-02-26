@@ -59,6 +59,13 @@ def scrape_wikipedia_table(url):
         else:
             print("No data rows found in the table.")
 
+# ===================================================================================
 # Example usage: Scraping from the Wikipedia page for population density
+# ===================================================================================
+
+# URL of the Wikipedia page you want to scrape
 url = "https://en.wikipedia.org/wiki/List_of_cities_by_population_density"
+
+# Call the function to scrape the table data from the specified URL 
 scrape_wikipedia_table(url)
+# ---------------------------------------------------------------
