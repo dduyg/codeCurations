@@ -1,5 +1,5 @@
 ## `file_renamer.py`
-Here’s a Python script to batch rename files in a folder according to a specific pattern, like adding a prefix or suffix to filenames, or renaming them based on the current date.
+Here’s a Python script to batch rename multiple files in a folder according to a specific pattern, like adding a prefix or suffix to filenames, or date-based renaming.
 
 > ### How it works:
 > - **`directory`**: The folder path where the files are located.
