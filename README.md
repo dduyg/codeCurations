@@ -6,14 +6,14 @@ _A collection of useful scripts designed to simplify everyday tasks, automate re
 ## 📜 The Scripts
 
 ### 🔹 Automation & Utilities
-| [`file_renamer.py`](scripts/file-renamer) | Image Filter App: – A script that applies filters (like grayscale, sepia, or blur) to images in a batch process. | Auto Email Sender – Send automated emails with attachments using SMTP. | [`➖️`](#) |
+| [`quick_rename.py`](scripts/QuickRename) | Image Filter App: – A script that applies filters (like grayscale, sepia, or blur) to images in a batch process. | Auto Email Sender – Send automated emails with attachments using SMTP. | [`➖️`](#) |
 |---|---|---|---|
 | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
 
 ### 🔹 Data Processing
 | Web Scraper – Extract data from websites and save it to CSV or JSON. | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
 |---|---|---|---|
-| [`PlaylistExtractor.py`](scripts/playlist-extractor) | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
+| [`playlist_extractor.py`](scripts/PlaylistExtractor) | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
 
 ### 🔹 Security & Productivity
 | Password Generator – Generates strong, random passwords with customizable options *(e.g. customizable length and complexity).* | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
@@ -27,7 +27,7 @@ _A collection of useful scripts designed to simplify everyday tasks, automate re
 
 <br>
 
-> ## <samp>Enjoy coding, and happy automating!😄</samp>
+> # ▉ <samp>Enjoy coding, and happy automating!😄</samp>
 > If you find *CodeCurations* useful, consider **starring** ⭐ the repository on GitHub to help others discover it!
 
 ### 🎯 Have an Idea?
