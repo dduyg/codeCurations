@@ -1,6 +1,5 @@
-# AutoMail
-
-*Here's a Python script to send automated emails using SMTP, with support for attachments:*
+# `auto_mailer.py`
+_Here's a Python script to send automated emails using SMTP, with support for attachments:_
 
 - Sends an email using Gmail's SMTP server (can be modified for other providers).
 - Supports attachments (PDFs, images, documents, etc.).
