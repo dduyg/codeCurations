@@ -1,7 +1,7 @@
 ## `wikitable_scraper.py`
 _This Python script scrapes tables from Wikipedia pages, extracts the table headers and data, and optionally saves the extracted data to CSV files. It utilizes the `requests` library for making HTTP requests and `BeautifulSoup` from `bs4` for parsing HTML._
 
-## Features
+### Features
 - Scrapes tables with the class `wikitable` or `wikitable sortable` from any Wikipedia page.
 - Prints an overview of the headers and the data rows for each table scraped.
 - Allows you to save the extracted data as CSV files.
@@ -14,20 +14,14 @@ pip install requests beautifulsoup4
 ```
 
 ## How to Use
-
-### 1. Clone or Download the Script
-Download or clone the script into your local machine.
-
-### 2. Modify the URL
-In the script, modify the `url` variable to the URL of the Wikipedia page from which you want to scrape tables. For example:
-```python
-url = "https://en.wikipedia.org/wiki/List_of_cities_by_population_density"
-```
-
-### 3. Call the `scrape_wikipedia_table` function
-The `scrape_wikipedia_table` function accepts the following parameters:
-- `url` (str): The URL of the Wikipedia page to scrape.
-- `save_csv` (bool): If `True`, the function will save the extracted data as CSV files. By default, it is set to `False`.
+1. **Clone or Download the Script**: Download or clone the script into your local machine.
+2. **Modify the URL**: In the script, modify the `url` variable to the URL of the Wikipedia page from which you want to scrape tables. For example:
+   ```python
+   url = "https://en.wikipedia.org/wiki/List_of_cities_by_population_density"
+   ```
+3. **Call the `scrape_wikipedia_table` function**: The function accepts the following parameters:
+   - `url` (str): The URL of the Wikipedia page to scrape.
+   - `save_csv` (bool): If `True`, the function will save the extracted data as CSV files. By default, it is set to `False`.
 
 To scrape a Wikipedia page and save the tables to CSV files:
 ```python
