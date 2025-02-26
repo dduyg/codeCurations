@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 
-def scrape_wikipedia_table(url, save_csv=False):
+def scrape_wikipedia_table(url, save_csv=False, preview_rows=5):
     """
     Scrapes tables from a Wikipedia page, returns the headers and data as a list of dictionaries,
     and optionally saves the data as CSV files.
@@ -10,6 +10,7 @@ def scrape_wikipedia_table(url, save_csv=False):
     Args:
         url (str): The URL of the Wikipedia page to scrape.
         save_csv (bool): If True, the function will save the extracted data as CSV files.
+        preview_rows (int): Number of rows to preview in the output to give a quick overview.
 
     Returns:
         list: A list of dictionaries containing the table data. Each dictionary represents a row of data.
@@ -57,14 +58,16 @@ def scrape_wikipedia_table(url, save_csv=False):
             if row_data:
                 all_rows_data.append(dict(zip(headers, row_data)))
         
-        # Output the data in a readable format
-        if all_rows_data:
-            print(f"Successfully extracted {len(all_rows_data)} data rows.\n")
-            for row in all_rows_data:
+        # Output a preview of the data (first few rows)
+        total_rows = len(all_rows_data)
+        if total_rows > 0:
+            print(f"Successfully extracted {total_rows} data rows.\n")
+            print("Preview of the first few rows:")
+            for row in all_rows_data[:preview_rows]:
                 print(row)
         else:
             print("No data rows found in the table.")
-        
+
         # Add the current table data to the overall data list
         wiki_data.append(all_rows_data)
 
@@ -92,6 +95,6 @@ def scrape_wikipedia_table(url, save_csv=False):
 url = "https://en.wikipedia.org/wiki/List_of_cities_by_population_density"
 
 # Call the function to scrape the table data from the specified URL and save the data as CSV
-wiki_data = scrape_wikipedia_table(url, save_csv=True)
+wiki_data = scrape_wikipedia_table(url, save_csv=True, preview_rows=5)
 
 # The variable 'wiki_data' now contains the extracted data, which can be further processed or saved
