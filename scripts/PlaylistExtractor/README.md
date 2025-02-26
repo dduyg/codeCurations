@@ -1,4 +1,4 @@
-## `PlaylistExtractor.py`
+## `playlist_extractor.py`
 
 This Python script allows you to:
 - Extract & download entire YouTube playlists.
@@ -36,7 +36,7 @@ A prompt will appear asking you to authorize Google Drive. Follow the instructio
 _If you don't want to use Google Drive, you can skip this step and store files in the local directory (`/content/YT_Downloads`)._
 
 ## Run the script 
-> **Run the script `PlaylistExtractor.py` or Copy and paste into the next cell of your Google Colab notebook to execute the script.**
+> **Run the script `playlist_extractor.py` or Copy and paste into the next cell of your Google Colab notebook to execute the script.**
 
 ## User Input Prompts
 The script will prompt you for the following inputs:
