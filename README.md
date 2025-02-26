@@ -6,7 +6,7 @@ _A collection of useful scripts designed to simplify everyday tasks, automate re
 ## 📜 The Scripts
 
 ### 🔹 Automation & Utilities
-| [`quick_rename.py`](scripts/QuickRename) | Image Filter App: – A script that applies filters (like grayscale, sepia, or blur) to images in a batch process. | Auto Email Sender – Send automated emails with attachments using SMTP. | [`➖️`](#) |
+| [`quick_rename.py`](scripts/QuickRename) | Image Filter App: – A script that applies filters (like grayscale, sepia, or blur) to images in a batch process. | [`auto_mailer.py`](scripts/AutoMail) | [`➖️`](#) |
 |---|---|---|---|
 | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
 
