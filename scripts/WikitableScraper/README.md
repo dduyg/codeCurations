@@ -1,47 +1,80 @@
-## `wikitable_scraper.py`
-_This Python script scrapes tables from Wikipedia pages, extracts the table headers and data, and optionally saves the extracted data to CSV files. It utilizes the `requests` library for making HTTP requests and `BeautifulSoup` from `bs4` for parsing HTML._
+# README.md
 
-### Features
-- Scrapes tables with the class `wikitable` or `wikitable sortable` from any Wikipedia page.
-- Prints an overview of the headers and the data rows for each table scraped.
-- Allows you to save the extracted data as CSV files.
-- Returns the scraped data as a list of dictionaries for further processing.
+# `wikitable_scraper.py`
+
+*This Python script scrapes tables from Wikipedia pages, extracts the table headers and data, provides an overview of the extracted information, and optionally saves the data as CSV files. It utilizes the `requests` library for making HTTP requests and `BeautifulSoup` from `bs4` for parsing HTML.*
+
+## Features
+
+✅ Scrapes tables with the class `wikitable` or `wikitable sortable` from any Wikipedia page.
+
+✅ Prints an **overview** of each table, including column headers and a preview of the first few rows.
+
+✅ Returns the **full scraped data** as a list of dictionaries for further processing.
+
+✅ **Optionally saves** the extracted data as CSV files.
 
 ## Requirements
-Before running the script, you need to install the necessary Python libraries. You can install them using `pip`:
+
+Before running the script, install the required Python libraries using `pip`:
+
 ```bash
 pip install requests beautifulsoup4
 ```
 
 ## How to Use
-1. **Clone or Download the Script**: Download or clone the script into your local machine.
-2. **Modify the URL**: In the script, modify the `url` variable to the URL of the Wikipedia page from which you want to scrape tables. For example:
-   ```python
-   url = "https://en.wikipedia.org/wiki/List_of_cities_by_population_density"
-   ```
-3. **Call the `scrape_wikipedia_table` function**: The function accepts the following parameters:
-   - `url` (str): The URL of the Wikipedia page to scrape.
-   - `save_csv` (bool): If `True`, the function will save the extracted data as CSV files. By default, it is set to `False`.
 
-To scrape a Wikipedia page and save the tables to CSV files:
+### 1️⃣ **Clone or Download the Script**
+
+Download or clone the script onto your local machine.
+
+### 2️⃣ **Modify the URL**
+
+In the script, set the `url` variable to the Wikipedia page you want to scrape.
+
+Example:
+
+```python
+url = "https://en.wikipedia.org/wiki/List_of_cities_by_population_density"
+```
+
+### 3️⃣ **Call the `scrape_wikipedia_table` Function**
+
+The function supports the following parameters:
+
+- `url` (**str**): The Wikipedia page URL to scrape.
+- `save_csv` (**bool**, default=`False`): If `True`, saves the data as CSV files.
+- `preview_rows` (**int**, default=`5`): Number of rows to preview in the console.
+
+### **Basic Usage:**
+
+To scrape a Wikipedia page and preview the first 5 rows per table:
+
+```python
+wiki_data = scrape_wikipedia_table(url)
+```
+
+### **Save Data as CSV:**
+
+To scrape and save each table as a CSV file:
+
 ```python
 wiki_data = scrape_wikipedia_table(url, save_csv=True)
 ```
 
-If you don’t want to save the data to CSV, you can set `save_csv` to `False`:
+### **Customize the Preview Size:**
+
+To show only the first 3 rows instead of 5:
+
 ```python
-wiki_data = scrape_wikipedia_table(url, save_csv=False)
+wiki_data = scrape_wikipedia_table(url, preview_rows=3)
 ```
 
 ## Output
-The script will print an overview of each table, including the headers and the number of data rows extracted. It will also display the data row dictionaries in the console.
 
-If `save_csv=True`, the script will save each table as a CSV file. Each table will be saved in a separate CSV file named `table_1.csv`, `table_2.csv`, etc.
+### **Console Overview:**
 
-The `wiki_data` variable will hold the scraped data as a list of dictionaries. Each dictionary corresponds to a row in the table with keys as the column headers.
-
-## <samp>Example Output</samp>
-If the script successfully scrapes the data, you will see something like this in the console:
+The script prints an **overview** of each table, including headers and a **preview** of the first few rows.
 
 ```
 Scraping Table 1:
@@ -51,16 +84,35 @@ City, Population, Area, Density, Country, Year, km2, mi2, /km2, /mi2
 Extracting the data rows...
 
 Successfully extracted 95 data rows.
-{'City': 'Croix-Daurade', 'Population': '148,163', 'Area': '53.16', 'Density': '2,785', 'Country': 'France', 'Year': '2017', 'km2': '53.16', 'mi2': '20.5', '/km2': '2,785', '/mi2': '7,222'}
+
+Preview of the first 5 rows:
+{'City': 'Croix', 'Population': '21,117', 'Area': '1.44', 'Density': '14,670', 'Country': 'France', 'Year': '2017'}
+{'City': 'Paris', 'Population': '2,165,423', 'Area': '105.4', 'Density': '20,609', 'Country': 'France', 'Year': '2020'}
+...
 
 Table 1 saved as table_1.csv.
 ```
 
-If no tables are found on the page:
+If **no tables** are found:
 
 ```
 No tables found on this page.
 ```
 
-## Author
-[DUYGU DAĞDELEN]
+### **CSV File Output (if enabled)**
+
+If `save_csv=True`, each table is saved as a CSV file (`table_1.csv`, `table_2.csv`, etc.), structured with the column headers.
+
+## **Returned Data Format**
+
+The function returns **all scraped data** as a list of dictionaries, even if only a preview is printed.
+
+Example:
+
+```python
+[
+    {"City": "Paris", "Population": "2,165,423", "Area": "105.4", "Density": "20,609", "Country": "France", "Year": "2020"},
+    {"City": "Manila", "Population": "1,846,600", "Area": "42.88", "Density": "43,079", "Country": "Philippines", "Year": "2020"},
+    ...
+]
+```
