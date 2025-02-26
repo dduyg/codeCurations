@@ -1,4 +1,4 @@
-## `file_renamer.py`
+## `quick_rename.py`
 Here’s a Python script to batch rename multiple files in a folder according to a specific pattern, like adding a prefix or suffix to filenames, or date-based renaming.
 
 > ### How it works:
@@ -22,10 +22,10 @@ And you set the prefix to `'new_'`, suffix to `'_backup'`, and enable the date o
 ```
 
 ## How to run:
-- Save the script as `file_renamer.py`
+- Save the script as `quick_rename.py`
 - Replace `path_to_your_folder` with the directory path where your files are stored
 - Run the script from the command line by typing:
   ```
-  python file_renamer.py
+  python quick_rename.py
   ```
 This will rename all the files in the specified directory based on your parameters!
