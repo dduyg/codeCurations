@@ -1,4 +1,4 @@
-# <samp>PlaylistExtractor</samp>
+## `PlaylistExtractor.py`
 
 This Python script allows you to:
 - Extract & download entire YouTube playlists.
