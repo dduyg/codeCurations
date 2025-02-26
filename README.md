@@ -13,7 +13,7 @@ _A collection of useful scripts designed to simplify everyday tasks, automate re
 ### 🔹 Data Processing
 | Web Scraper – Extract data from websites and save it to CSV or JSON. | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
 |---|---|---|---|
-| [`➖️`](#) | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
+| [`PlaylistExtractor.py`](scripts/playlist-extractor) | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
 
 ### 🔹 Security & Productivity
 | Password Generator – Generates strong, random passwords with customizable options *(e.g. customizable length and complexity).* | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
