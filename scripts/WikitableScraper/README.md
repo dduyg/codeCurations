@@ -1,7 +1,4 @@
-# README.md
-
-# `wikitable_scraper.py`
-
+## `wikiTable_scraper.py`
 *This Python script scrapes tables from Wikipedia pages, extracts the table headers and data, provides an overview of the extracted information, and optionally saves the data as CSV files. It utilizes the `requests` library for making HTTP requests and `BeautifulSoup` from `bs4` for parsing HTML.*
 
 ## Features
