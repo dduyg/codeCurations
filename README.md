@@ -21,7 +21,7 @@ _A collection of useful scripts designed to simplify everyday tasks, automate re
 | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
 
 ### 🔹 Fun & Miscellaneous
-| Meme Generator – Generate memes with custom captions using an image library. | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
+| Meme Generator – Generate memes with custom captions using an image library. | [`story_weaver.py`](scripts/StoryWeaver) | [`➖️`](#) | [`➖️`](#) |
 |---|---|---|---|
 | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
 
