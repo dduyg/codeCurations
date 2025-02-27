@@ -11,7 +11,7 @@ _A collection of useful scripts designed to simplify everyday tasks, automate re
 | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
 
 ### 🔹 Data Processing
-| Web Scraper – Extract data from websites and save it to CSV or JSON. | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
+| [`wikiTable_scraper.py`](scripts/WikiTableScraper) | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
 |---|---|---|---|
 | [`playlist_extractor.py`](scripts/PlaylistExtractor) | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
 
