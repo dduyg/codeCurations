@@ -1,5 +1,5 @@
 ## `random_passGen.py`
-_A simple and customizable Python script to generate strong, random passwords. This script allows you to specify the length and complexity of the password, including options for uppercase letters, digits, and special characters:_
+_Generate strong, random passwords with customizable options using this Python script. It allows you to specify the length and complexity of the password, including options for uppercase letters, digits, and special characters:_
 - **Customizable Length**: Choose the desired length of the password (default is 12 characters).
 - **Character inclusion**: Uppercase, digits, and special characters (like `!`, `@`, `#`, etc.) can be toggled *on* or *off*.
 - **Randomization**: Passwords are generated with secure randomness.
