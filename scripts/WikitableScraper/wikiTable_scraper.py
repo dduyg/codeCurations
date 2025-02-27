@@ -5,7 +5,7 @@ import csv
 def scrape_wikipedia_table(url, save_csv=False, preview_rows=5):
     """
     Scrapes tables from a Wikipedia page, correctly handling multi-level column headers,
-    returning the data as a list of dictionaries, and optionally save the data as CSV files.
+    returning as a list of dictionaries, and optionally saves the data as CSV files.
 
     Args:
         url (str): The URL of the Wikipedia page to scrape.
