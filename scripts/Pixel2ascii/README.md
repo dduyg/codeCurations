@@ -16,10 +16,10 @@ Before running the script, install the required dependency:
 pip install pillow
 ```
 
-## How to Use
+## 🚀 How to Use
 You can use the script in **three ways**:
-
-### 1. Convert an Entire Folder of Images
+ 
+### 1️⃣ Convert an Entire Folder of Images
 Converts all images inside a specified folder and saves the ASCII text files in `ascii_output/` folder:
 ```
 python pixel2ascii.py -f /path/to/image_folder
@@ -30,7 +30,7 @@ Optionally, specify a custom output directory:
 python pixel2ascii.py -f /path/to/image_folder -o /path/to/output_folder
 ```
 
-### 2. Convert Specific Images
+### 2️⃣ Convert Specific Images
 If you want to convert only certain images, provide their filenames:
 ```
 python pixel2ascii.py -i 04.jpg 06.png 07.png
@@ -41,7 +41,7 @@ Save the output to a specific folder:
 python pixel2ascii.py -i 04.jpg 06.png 07.png -o ascii_results
 ```
 
-### 3. Adjust ASCII Output Width
+### 3️⃣ Adjust ASCII Output Width
 For higher resolution, adjust the ASCII width:
 ```
 python pixel2ascii.py -f /path/to/image_folder -w 150
