@@ -1,75 +1,60 @@
-## `file_tidy.py`
-This Python script automatically organizes files in a specified directory into folders based on their file types (e.g., images, documents, videos, archives, scripts, etc.) to save time and help keep your workspace tidy. It creates subfolders for each file type category and moves the corresponding files into them.
+# `file_tidy.py`
 
-## How to use the script
-### 1️⃣ Download/Clone the repository
-You can either clone the repository (if hosted) or simply download the `file_tidy.py` file.
+The `file_tidy.py` script is designed to help organize files in a given directory by categorizing them based on their extensions. It moves files into separate subfolders corresponding to different categories such as `Images`, `Documents`, `Audio`, `Videos`, `Archives`, `Code`, and `Others`. Files that don't match any of the predefined categories are moved to the "Others" folder.
 
-### 2️⃣ Modify the `TARGET_DIR` variable
-Open the script file (`file_tidy.py`) and change the `TARGET_DIR` variable to the path of the directory you want to organize.    
+The script also logs the actions performed (file movements) to a log file, `file_organizer.log`, to maintain a record of the organization process.
 
-```python
-TARGET_DIR = "/path/to/your/directory"  # Change this to your target directory
-```
-    
-### 3️⃣ Run the script
-Open your terminal/command prompt. Navigate to the directory where `file_tidy.py` is saved. Run the script using the following command:
+## How to Use
+
+### 1️⃣ Prepare the Directory
+
+Ensure that the directory you want to organize is ready. The script will reorganize all files in the given directory and its subdirectories.
+
+### 2️⃣ Run the Script
+
+1. Save the script as `file_tidy.py`.
+2. Open a terminal or command prompt.
+3. Navigate to the directory where `file_tidy.py` is saved.
+4. Run the script by typing:
 
 ```bash
 python file_tidy.py
 ```
-    
-### 4️⃣ Organizing Process
-The script will:
-- Create subdirectories for different file categories (Images, Documents, Videos, Audio, Archives, Scripts, and Other).
-- Move the files into their corresponding categories based on file extensions.
-- Files that don’t match any defined category will be moved into the "Other" folder.
 
-## Customization
-- **File Categories**: The script is already set up to recognize common file types for categories like images, documents, videos, audio, etc. You can modify the `FILE_CATEGORIES` dictionary to add more categories or file types.
-    
-    ```python
-    FILE_CATEGORIES = {
-        "Images": [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff", ".webp"],
-        "Documents": [".pdf", ".doc", ".docx", ".txt", ".rtf", ".odt", ".xls", ".xlsx", ".ppt", ".pptx"],
-        "Videos": [".mp4", ".mkv", ".flv", ".avi", ".mov", ".wmv", ".webm"],
-        "Audio": [".mp3", ".wav", ".aac", ".flac", ".ogg", ".m4a"],
-        "Archives": [".zip", ".tar", ".gz", ".rar", ".7z"],
-        "Scripts": [".py", ".sh", ".bat", ".js", ".css", ".html"],
-        "Other": []  # Files that don't match any category will go here
-    }
-    ```
-    
-- **Directory Structure**: The script creates subdirectories based on the categories defined. Feel free to change the structure by modifying the script.
+### 3️⃣ Provide the Directory Path
 
-## <samp>Example Directory Structure After Running the Script</samp>
+When prompted, enter the path of the directory you want to organize. For example:
+
 ```
-/path/to/your/directory/
-├── Images/
-│   ├── photo1.jpg
-│   ├── image2.png
-├── Documents/
-│   ├── resume.pdf
-│   ├── report.docx
-├── Videos/
-│   ├── movie.mp4
-│   ├── clip.mkv
-├── Audio/
-│   ├── song.mp3
-│   ├── podcast.wav
-├── Archives/
-│   ├── archive.zip
-│   ├── backup.tar
-├── Scripts/
-│   ├── file_organizer.py
-│   ├── automation.sh
-└── Other/
-    ├── randomfile.xyz
+Enter the path of the directory you want to organize: /path/to/your/folder
+```
+
+### 4️⃣ Check the Organization and Log
+
+- The script will create subfolders for each category in the specified directory.
+- It will move the files to the appropriate subfolder based on their extensions.
+- After the process is complete, the terminal will display "File organization complete!" and a log file (`file_organizer.log`) will be created in the same directory where the script is run. The log file contains detailed information about the file movements.
+
+## Logging
+
+The script generates a log file named `file_organizer.log` to record the actions taken. The log includes:
+
+- File movements (from source to destination).
+- Timestamps for each action.
+- Errors (if any directory does not exist).
+
+## <samp>Example Log Output</samp>
+
+```
+2025-02-27 12:34:56,789 - INFO - Created folder: /path/to/your/folder/Images
+2025-02-27 12:35:01,123 - INFO - Moved photo.jpg from /path/to/your/folder to Images folder.
+2025-02-27 12:35:10,456 - INFO - Moved document.pdf from /path/to/your/folder to Documents folder.
+2025-02-27 12:35:15,789 - INFO - Moved video.mp4 from /path/to/your/folder to Videos folder.
+2025-02-27 12:35:20,234 - INFO - File organization complete!
 ```
 
 ## Troubleshooting
-- **Error: `The directory does not exist`**: Make sure the `TARGET_DIR` is correctly set to the path of an existing directory.
 
-- **The script doesn't move files**:
-    - Double-check that the files have extensions that match those defined in the `FILE_CATEGORIES` dictionary.
-    - Ensure the script has permission to read from the source directory and write to the destination directories.
+**🔹️ Directory Not Found**: If the provided directory path does not exist, the script will log an error and display an error message.
+
+**🔹️ Permissions**: Ensure the script has sufficient permissions to read from the source directory and write to the destination folders.
