@@ -11,7 +11,7 @@ _A collection of useful scripts designed to simplify everyday tasks, automate re
 | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
 
 ### 🔹 Data Processing
-| [`wikiTable_scraper.py`](scripts/WikiTableScraper) | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
+| [`wikiTable_scraper.py`](scripts/WikiTableScraper) | [`➖️`](#) | [`pixel2ascii.py`](scripts/Pixel2ascii) | [`➖️`](#) |
 |---|---|---|---|
 | [`playlist_extractor.py`](scripts/PlaylistExtractor) | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
 
