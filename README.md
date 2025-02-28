@@ -6,24 +6,20 @@ _A collection of useful scripts designed to simplify everyday tasks, automate re
 ## 📜 The Scripts
 
 ### 🔹 Automation & Utilities
-| [`quick_rename.py`](scripts/QuickRename) | Image Filter App: – A script that applies filters (like grayscale, sepia, or blur) to images in a batch process. | [`auto_mailer.py`](scripts/AutoMail) | [`file_tidy.py`](scripts/FileTidy) |
-|---|---|---|---|
-| [`➖️`](#) | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
+| [`quick_rename.py`](scripts/QuickRename) | [`auto_mailer.py`](scripts/AutoMail) | [`file_tidy.py`](scripts/FileTidy) |
+|---|---|---|
 
 ### 🔹 Data Processing
-| [`wikiTable_scraper.py`](scripts/WikiTableScraper) | [`➖️`](#) | [`pixel2ascii.py`](scripts/Pixel2ascii) | [`➖️`](#) |
-|---|---|---|---|
-| [`playlist_extractor.py`](scripts/PlaylistExtractor) | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
+| [`wikiTable_scraper.py`](scripts/WikiTableScraper) |[`pixel2ascii.py`](scripts/Pixel2ascii) | [`playlist_extractor.py`](scripts/PlaylistExtractor) |
+|---|---|---|
 
 ### 🔹 Security & Productivity
-| [`random_passGen.py`](scripts/RandomPassGen) | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
-|---|---|---|---|
-| [`➖️`](#) | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
+| [`random_passGen.py`](scripts/RandomPassGen) | [`◽️`](#) | [`◽️`](#) |
+|---|---|---|
 
 ### 🔹 Fun & Miscellaneous
-| Meme Generator – Generate memes with custom captions using an image library. | [`story_weaver.py`](scripts/StoryWeaver) | [`➖️`](#) | [`➖️`](#) |
-|---|---|---|---|
-| [`➖️`](#) | [`➖️`](#) | [`➖️`](#) | [`➖️`](#) |
+| [`story_weaver.py`](scripts/StoryWeaver) | [`◽️`](#) | [`◽️`](#) |
+|---|---|---|
 
 <br>
 
