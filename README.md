@@ -18,7 +18,7 @@ _A collection of useful scripts designed to simplify everyday tasks, automate re
 |---|---|---|
 
 ### 🔹 Fun & Miscellaneous
-| [`story_weaver.py`](scripts/StoryWeaver) | [`◽️`](#) | [`◽️`](#) |
+| [`story_weaver.py`](scripts/StoryWeaver) | [`◽️`](#) | [`emoji_pass.py`](scripts/emoji_pass.py) |
 |---|---|---|
 
 <br>
