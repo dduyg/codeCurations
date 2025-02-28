@@ -23,7 +23,7 @@ _A collection of useful scripts designed to simplify everyday tasks, automate re
 
 <br>
 
-> # ▉ <samp>Enjoy coding, and happy automating!😄</samp>
+> ## ▉ <samp>Enjoy coding, and happy automating!😄</samp>
 > If you find *CodeCurations* useful, consider **starring** ⭐ the repository on GitHub to help others discover it!
 
 ### 🎯 Have an Idea?
