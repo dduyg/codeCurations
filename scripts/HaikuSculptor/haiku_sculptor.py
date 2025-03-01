@@ -4,12 +4,12 @@ import pyphen
 # Initialize the Pyphen syllable counting object
 pyphen_obj = pyphen.Pyphen(lang='en')
 
-# A much larger dictionary of words categorized by syllable count, including locations and subjects
+# Word bank with more natural imagery
 word_dict = {
     1: [
         "wind", "leaf", "sky", "tree", "sun", "cloud", "rain", "moon", "star", "bird",
         "rock", "stone", "snow", "light", "fire", "ice", "path", "rose", "earth", "sea",
-        "lake", "hill", "wood", "dawn", "shade", "snow", "dew", "mist", "wave", "grass",
+        "lake", "hill", "wood", "dawn", "shade", "dew", "mist", "wave", "grass",
         "night", "day", "star", "heat", "fire", "rain", "cloud", "storm", "flower", "snow",
         "earth", "shore", "mist", "leaf", "stone", "creek", "river", "dream", "sky", "beach",
         "gold", "blue", "red", "green", "black", "white", "gray", "pink", "purple", "teal",
@@ -58,15 +58,6 @@ word_dict = {
         "meditation", "harmony", "exploration", "liberation", "transformation", "reformation", "elation",
         "lavender", "goldenrod", "amethyst", "peacock", "cinnamon", "topaz", "fuchsia", "crimson", "chartreuse",
         "coast", "mountain", "village", "temple", "harbor", "canyon", "ocean", "cliff", "desert"
-    ],
-    6: [
-        "synchronization", "restoration", "magnification", "unfolding", "proclamation", "illumination", 
-        "transformation", "integration", "coordination", "rejuvenation", "reinterpretation", "consolidation",
-        "reconfiguration", "renovation", "organization", "complication", "combination", "revolution", 
-        "reconstruction", "constellation", "appreciation", "justification", "subjugation", "emancipation", 
-        "reparations", "separation", "realignment", "visualization", "affirmation", "identification",
-        "pearl", "ruby", "onyx", "topaz", "sapphire", "jade", "emerald", "diamond", "turquoise", "ivory",
-        "village", "temple", "palace", "mountain", "meadow", "canyon", "river", "desert", "oasis", "ocean"
     ]
 }
 
@@ -79,10 +70,17 @@ def generate_line(syllable_count):
     line = []
     while syllable_count > 0:
         # Randomly choose a word with the remaining syllable count
-        available_words = [word for word in word_dict[syllable_count] if count_syllables(word) == syllable_count]
-        word = random.choice(available_words)
+        possible_words = []
+        for count in range(1, syllable_count + 1):
+            possible_words.extend([word for word in word_dict.get(count, []) if count_syllables(word) == count])
+
+        if not possible_words:  # If no word matches the exact syllable count, break out
+            break
+        
+        word = random.choice(possible_words)
         line.append(word)
         syllable_count -= count_syllables(word)
+        
     return " ".join(line)
 
 # Function to generate a haiku (5-7-5 syllable structure)
@@ -94,5 +92,5 @@ def generate_haiku():
     haiku = f"{line1}\n{line2}\n{line3}"
     return haiku
 
-# Generate and print a haiku
+# Display haiku
 print(generate_haiku())
