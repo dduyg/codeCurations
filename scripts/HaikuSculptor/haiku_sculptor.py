@@ -67,7 +67,7 @@ def create_line(syllables, word_lists):
 # Function to generate a single Haiku with a random theme
 def generate_haiku():
     theme = random.choice(themes)
-    print(f"Generating Haiku based on the theme: {theme}")
+    print(f"🌸 Generating Haiku based on the theme: {theme}")
     
     word_lists = load_word_lists()
     
@@ -104,10 +104,10 @@ def generate_multiple_haikus(num_haikus):
 def save_haikus_to_json(haikus, filename="haikus.json"):
     with open(filename, "w") as f:
         json.dump(haikus, f, ensure_ascii=False, indent=4)
-    print(f"Haikus have been saved to {filename}")
+    print(f"✅ Haikus have been saved to {filename}")
 
 # Example usage
-num_haikus = int(input("How many Haikus would you like to generate? "))
+num_haikus = int(input("🌸🌿 How many Haikus would you like to generate? "))
 haikus = generate_multiple_haikus(num_haikus)
 
 # Display generated Haikus
