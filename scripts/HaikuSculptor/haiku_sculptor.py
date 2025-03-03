@@ -101,7 +101,7 @@ def generate_multiple_haikus(num_haikus):
     return haikus
 
 # Function to save the Haikus collection as a JSON file
-def save_haikus_to_json(haikus, filename="haikus_collection.json"):
+def save_haikus_to_json(haikus, filename="haikus.json"):
     with open(filename, "w") as f:
         json.dump(haikus, f, ensure_ascii=False, indent=4)
     print(f"Haikus have been saved to {filename}")
