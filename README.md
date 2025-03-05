@@ -14,7 +14,7 @@ _A collection of useful scripts designed to simplify everyday tasks, automate re
 |---|---|---|
 
 ### 🔹 Security & Productivity
-| [`random_passGen.py`](scripts/RandomPassGen) | [`◽️`](#) | [`◽️`](#) |
+| [`random_passGen.py`](scripts/RandomPassGen) | [`ClipboardGuardian.py`](scripts/ClipboardGuardian) | [`◽️`](#) |
 |---|---|---|
 
 ### 🔹 Fun & Miscellaneous
