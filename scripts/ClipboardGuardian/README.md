@@ -1,5 +1,4 @@
-# README
-
+## `ClipboardGuardian.py`
 This Python script runs in the background and automatically organizes copied text and manages your clipboard history. This script allows you to:
 
 ✔️Automatically save clipboard content with customizable categories.
@@ -13,28 +12,22 @@ This Python script runs in the background and automatically organizes copied tex
 ✔️Automatically detect and filter out  sensitive data, such as passwords or API keys.
 
 ## Install Dependencies
-
 Before running the script, make sure you have the following dependencies installed:
-
-- **pyperclip**: To interact with the clipboard.
-- **keyboard**: To capture keyboard hotkeys.
-- **tkinter**: For creating the GUI interface.
-- **pandas**: For handling export functionality.
-- **gspread**: To interact with Google Sheets for cloud syncing.
-- **oauth2client**: For Google Sheets authentication.
+- `pyperclip`: To interact with the clipboard.
+- `keyboard`: To capture keyboard hotkeys.
+- `tkinter`: For creating the GUI interface.
+- `pandas`: For handling export functionality.
+- `gspread`: To interact with Google Sheets for cloud syncing.
+- `oauth2client`: For Google Sheets authentication.
 
 You can install the required libraries using `pip`:
-
 ```bash
 pip install pyperclip keyboard pandas gspread oauth2client tkinter
 ```
 
 ## Configuration
-
 ### 🔹️Google Drive Sync Setup
-
-To enable **Google Drive sync**, follow these steps:
-
+To enable Google Drive sync, follow these steps:
 1. **Create Google API credentials**:
     - Go to the [Google Cloud Console](https://console.cloud.google.com/).
     - Enable the **Google Sheets API**.
@@ -45,11 +38,9 @@ To enable **Google Drive sync**, follow these steps:
     - Share it with the service account email found in the `credentials.json`.
 
 ### 🔹️Custom Categories
-
 The script uses a `config.json` file for defining custom categories and keywords for clipboard classification.
 
 The default `config.json` looks like this:
-
 ```json
 {
     "URL": ["http", "https", "www"],
@@ -58,20 +49,15 @@ The default `config.json` looks like this:
     "Sensitive": ["password", "api_key", "secret", "token"]
 }
 ```
-
 You can edit this file to add or modify categories and associated keywords.
 
 ## How to Use
-
-1. **Run the Script**:
-    
-    Execute the script by running:
-    
-    ```bash
-    python ClipboardGuardian.py
-    ```
-    
-    The script will run in the background, monitoring your clipboard for any new text that you copy.
+### 1️⃣ Run the Script   
+Execute the script by running:
+```bash
+python ClipboardGuardian.py
+```
+The script will run in the background, monitoring your clipboard for any new text that you copy.
     
 2. **Clipboard Monitoring**:
     
@@ -103,17 +89,12 @@ You can edit this file to add or modify categories and associated keywords.
 - **Ctrl + I** (in GUI): Import clipboard history from a `.csv` or `.txt` file.
 - **Ctrl + G** (in GUI): Sync clipboard history to Google Drive.
 
----
-
 ## Troubleshooting
-
-### **Google Drive Sync Issues**
-
+### Google Drive Sync Issues
 - Ensure that the **Google Sheets API** is enabled in the [Google Cloud Console](https://console.cloud.google.com/).
 - Check if the `credentials.json` file is correctly set up and accessible by the script.
 - Make sure the Google Sheet is shared with the service account email (found in the `credentials.json`).
 
-### **Clipboard History Not Being Saved**
-
+### Clipboard History Not Being Saved
 - Check the `config.json` file to make sure that categories and keywords are properly defined.
 - Verify that the clipboard content doesn't contain sensitive data (e.g., passwords) that would cause it to be excluded.
