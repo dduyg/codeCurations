@@ -1,5 +1,5 @@
 ## `haiku_sculptor.py`
-This Python script generates **Haikus** — a traditional form of Japanese poetry —with dynamic word selection using the [Datamuse API](https://www.datamuse.com/api/) to fetch relevant words based on the randomly selected themes. The word bank is designed to reflect traditional Haiku themes, with words related to nature, seasons, elements, colors, objects, and places. The script generates each line of the Haiku with a syllable-counting algorithm using the `syllapy` library, adhering to the traditional 5-7-5 syllable structure of a Haiku. It allows you to generate multiple Haikus, choose how many you want, and save them in a JSON file for future use. The script also pulls related words from the *Datamuse API* to create varied and creative Haikus based on the selected theme.
+This Python script generates **Haikus** — a traditional form of Japanese poetry —with dynamic word selection using the [Datamuse API](https://www.datamuse.com/api/) to fetch relevant words based on the randomly selected themes. The word bank is designed to reflect traditional Haiku themes, with words related to nature, seasons, elements, colors, objects, and places. The script generates each line of the Haiku with a syllable-counting algorithm using the `syllapy` library, adhering to the traditional 5-7-5 syllable structure of a Haiku. It allows you to generate multiple Haikus, choose how many you want, and save them in a JSON file for future use.
 
 ## Installation Dependencies
 You can install the required dependencies using `pip`:
@@ -61,7 +61,7 @@ birds sing in the dawn
 The above command generates *3 Haikus* based on randomly selected themes and save them to a JSON file.
 
 ## Customization
-The list of predefined themes can be modified in the script to add or remove themes. Each Haiku is generated based on a random selection from this list. The script pulls related words from the *Datamuse API* based on the selected theme.
+The list of predefined themes can be modified in the script to add or remove themes. Each Haiku is generated based on a random selection from this list. The script pulls related words from the *Datamuse API* to create varied and creative Haikus based on the selected theme.
 
 If you want to add a new theme like "mountain" and associated words, you can extend the lists in the script:
 ```python
